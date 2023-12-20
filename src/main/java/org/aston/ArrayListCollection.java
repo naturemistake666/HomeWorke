@@ -6,8 +6,6 @@ public class ArrayListCollection<T> {
     private T[] innerMas;
     private int size;
 
-    private final int DEFAULT_CAPACITY = 10;
-
     public ArrayListCollection(int capacity) {
         if (capacity == 0) {
             throw new IllegalArgumentException();
@@ -17,6 +15,7 @@ public class ArrayListCollection<T> {
     }
 
     public ArrayListCollection() {
+        int DEFAULT_CAPACITY = 10;
         innerMas = (T[]) new Object[DEFAULT_CAPACITY];
     }
 
