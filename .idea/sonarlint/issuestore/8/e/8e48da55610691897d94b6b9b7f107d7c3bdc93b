@@ -1,0 +1,13 @@
+
+|	java:S116"[Rename this field "DEFAULT_CAPACITY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û„ƒ¬şÿÿÿÿ8î€§ÁÈ1
+C
+java:S1170"!Make this final field static too.(û„ƒ¬şÿÿÿÿ8ò€§ÁÈ1
+L	java:S106#"+Replace this use of System.out by a logger.(””å±şÿÿÿÿ8Š‚§ÁÈ1
+L	java:S106)"+Replace this use of System.out by a logger.(À»Ø‡úÿÿÿÿ8‚§ÁÈ1
+L	java:S1060"+Replace this use of System.out by a logger.(’®…àûÿÿÿÿ8‚§ÁÈ1
+L	java:S1062"+Replace this use of System.out by a logger.(Ó–¦ıÿÿÿÿ8‚§ÁÈ1
+L	java:S1066"+Replace this use of System.out by a logger.(””å±şÿÿÿÿ8‚§ÁÈ1
+v
+java:S3012="YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(„±Ï8“‚§ÁÈ1
+B
+java:S2116O"%Use "Arrays.toString(array)" instead.(Š“×¬8 ‚§ÁÈ1

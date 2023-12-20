@@ -1,30 +1,46 @@
 package org.aston;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Main {
-
-    private static ArrayListCollection<String> collection1 = new ArrayListCollection();
+    private static ArrayListCollection<Integer> collection1 = new ArrayListCollection<>(1);
+    private static ArrayListCollection<String> collection2 = new ArrayListCollection<>(4);
     public static void main(String[] args) {
-        String o = "Kiril";
-        String o1 = "Kiril";
-        String o2 = "Artem";
-        //инициализация
-        collection1.setInnerMas(new String[]{"Vitya", "Vania", "Ilia"});
-        collection1.setSize(collection1.getSize(collection1.getInnerMas()));
+        //Добавление элемента
+        collection2.add("i");
+        collection2.add("b");
+        collection2.add("c");
+        collection2.add("t");
+        collection2.add("5");
 
-        //добавление нового элемента
-        collection1.setInnerMas(collection1.add(o, collection1.getInnerMas(), collection1.getSize(collection1.getInnerMas())));
+        //Удаление элемента по индексу
+        collection2.delete(1);
 
-        collection1.setInnerMas(collection1.add(o1, collection1.getInnerMas(), collection1.getSize(collection1.getInnerMas())));
+        //Получение элемента по индексу
+        collection2.get(3);
 
-        collection1.setInnerMas(collection1.add(o2, collection1.getInnerMas(), collection1.getSize(collection1.getInnerMas())));
+        //Замена эдемента по индексу
+        collection2.set(1,"2");
 
-        collection1.remove("Kiril");
 
-        for (int i = 0; i < collection1.getInnerMas().length; i++) {
-            System.out.println(collection1.getInnerMas()[i]);
+        //Проверка пустая коллекция или нет
+        if (collection1.isEmpty()) {
+            collection1.add(1);
+            collection1.add(2);
+            collection1.add(3);
+        } else {
+            System.out.println("Коллекция уже содержит значение");
         }
-        System.out.println(collection1.lastIndex(collection1.getInnerMas(), collection1.getSize(collection1.getInnerMas())));
-        }
 
+        collection1.set(2,10);
+
+        collection1.add(6);
+
+        //Вывод всех элементов коллекции
+        System.out.println(collection1);
+        System.out.println(collection2);
+
+    }
 
     }
